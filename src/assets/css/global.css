@@ -1,0 +1,14 @@
+.profile-avatar {
+  width: 25px !important;
+  height: 25px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+}
+
+.user-image-2 {
+  width: 190px !important;
+  height: 162px !important;
+}
+.css-xjab4l {
+  width: fit-content !important;
+}

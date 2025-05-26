@@ -1,0 +1,13 @@
+.expired-certificate{
+    background-color: #fef2f2;
+    color: #f54040;
+    padding: 5px 5px;
+    font-weight: 600;
+}
+
+.running-certificate{
+    color: #519330;
+    background-color: #ecfdf5;
+    padding: 5px 5px;
+    font-weight: 600;
+}

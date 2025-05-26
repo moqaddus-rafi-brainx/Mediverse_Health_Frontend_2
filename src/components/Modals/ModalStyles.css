@@ -1,0 +1,153 @@
+.breakdown-head {
+  background-color: #f4f4f4;
+}
+
+.breakdown-updated {
+  background-color: #f2f8fe;
+}
+
+.breakdown-rows {
+  font-size: small;
+}
+
+.grand-total {
+  background: #519330;
+  color: white;
+}
+
+/* user listing modal css  */
+
+.heading-user-listing {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(55, 61, 63, 1);
+}
+
+.input-field {
+  width: 100%;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(117, 117, 117, 1);
+
+  border: 1px solid rgba(231, 234, 238, 1);
+  border-radius: 4px;
+  padding: 8px;
+
+  background: linear-gradient(0deg, #e7eaee, #e7eaee), linear-gradient(0deg, #f4f4f4, #f4f4f4);
+}
+
+.users-listing-sub-heading {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(55, 61, 63, 1);
+}
+
+.label-styling {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(85, 95, 97, 1);
+}
+
+.users_div {
+  width: 100% !important;
+}
+
+.detail-form-sub-heading {
+  font-size: 14px;
+  color: #555f61;
+}
+
+@media print {
+  .exclude-print {
+    display: none !important;
+  }
+  @page {
+    size: A3;
+    margin: 1cm;
+  }
+  .include-print {
+    display: block !important;
+  }
+}
+
+.detail-form-text {
+  font-size: 16px;
+  color: #373d3f;
+  font-weight: 600;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  height: 380px !important;
+  width: 100% !important;
+  overflow-y: auto;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.07);
+}
+
+/* user listing modal css  */
+.user-profile-icon {
+  width: 120px;
+  height: 110px;
+}
+
+.required-color-margin {
+  color: red;
+  margin-top: -5px !important;
+}
+
+/* vehicle categories modal */
+.close-icon-btn {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  margin: 6% 2% !important;
+}
+
+.cancel-btn {
+  color: #3b98d1 !important;
+  border: 1px solid rgb(185, 185, 185) !important;
+}
+
+.ok-btn {
+  background-color: #3b98d1 !important;
+  color: #ffffff !important;
+
+  &:hover {
+    background-color: #3b98d1 !important;
+  }
+}
+
+.separator-line {
+  margin: 6% 0%;
+}
+
+.check-boxes {
+  margin-left: 10px;
+}
+
+.vehicle-categories-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  border-radius: 5px;
+}
+
+/* vehicle categories modal */

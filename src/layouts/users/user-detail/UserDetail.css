@@ -1,0 +1,18 @@
+
+.active-btn,.active-btn:hover{
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    background-color: #3b98d1 !important;
+    border-radius: 20% !important;
+    color: white !important;
+    width: 130px !important;
+}
+
+.passive-btn,.passive-btn:hover{
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    color: #555F61 !important;
+    background: none !important;
+    border: none !important;
+    width: 130px !important;
+}

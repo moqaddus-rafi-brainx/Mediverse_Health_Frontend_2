@@ -1,0 +1,47 @@
+.multiDropdown {
+  background-color: white !important;
+  min-height: calc(1.1em + 1rem) !important;
+  height: fit-content !important;
+  border: 1px solid #d2d6da !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 3px 2px rgb(233 236 239 / 5%) !important;
+}
+
+.parent-selectedLabels {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 10px;
+}
+
+.dropdown-placeholder {
+  font-size: 0.9rem;
+  text-align: left !important;
+  line-height: normal !important;
+  color: #b5b9bd;
+}
+
+.selectedLabel {
+  border-width: 1px 1px 1px 5px;
+  border-style: solid;
+  border-color: #e5e9ef;
+  border-left-color: #3176a7;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+  color: #556d7d !important;
+  font-size: small;
+  line-height: normal;
+}
+
+.selectedClose {
+  width: 1rem;
+}
+
+.menuDropdown {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px hsla(218, 50%, 10%, 0.1), 0 4px 11px hsla(218, 50%, 10%, 0.1);
+  position: absolute;
+  width: 100%;
+  z-index: 99999;
+}

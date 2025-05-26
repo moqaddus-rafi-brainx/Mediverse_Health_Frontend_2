@@ -1,0 +1,13 @@
+.route {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.route-light {
+    font-weight: 400;
+}
+
+.route-bold {
+    font-weight: 600;
+}
