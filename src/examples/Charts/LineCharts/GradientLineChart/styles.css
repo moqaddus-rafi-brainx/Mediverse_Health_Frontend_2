@@ -1,0 +1,20 @@
+canvas {
+    height: inherit !important;
+    width: 100% !important;
+}
+
+body>div.rs-anim-fade.rs-anim-in.rs-picker-daterange-menu.rs-picker-menu.placement-bottom-start>div>div>div>div.rs-picker-toolbar.rs-stack>div:nth-child(1)>div>div:nth-child(1) {
+    display: none;
+}
+
+body>div.rs-anim-fade.rs-anim-in.rs-picker-daterange-menu.rs-picker-menu.placement-bottom-start>div>div>div>div.rs-picker-toolbar.rs-stack>div:nth-child(1)>div>div:nth-child(2)>button {
+    display: none;
+}
+
+.rs-picker-daterange-calendar-group {
+    height: 296px !important;
+}
+
+.rs-picker-daterange-menu .rs-calendar {
+    height: 296px !important;
+}

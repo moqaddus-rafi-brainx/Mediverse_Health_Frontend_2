@@ -1,0 +1,68 @@
+.rotate-icon {
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotate-icon.open {
+    transform: rotate(180deg);
+}
+
+.admin_name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.notification-number-icon-1{
+    position: relative;
+    margin-top: -60%;
+    margin-left: -25% !important;
+    font-size: 12px;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 100% !important;
+    border: 1px solid white;
+    padding: 0% 15%;
+}
+
+.notification-number-icon-2{
+    position: relative;
+    margin-top: -60%;
+    margin-left: -25% !important;
+    font-size: 12px;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 100% !important;
+    border: 1px solid white;
+    padding: 1% 8%;
+}
+
+.notification-number-icon-3{
+    position: relative;
+    margin-top: -60%;
+    margin-left: -25% !important;
+    font-size: 12px;
+    background-color: red;
+    font-weight: 600;
+    border-radius: 100% !important;
+    border: 1px solid white;
+    padding: 5% 5%;
+}
+
+.see-all-btn{
+ width: 100%;
+ color: #3b98d1;
+ border: none;
+ font-size: 16px;
+ border-radius: 5px;
+ background-color: white;   
+}
+
+.notification-text{
+    font-size: 25px;
+    color: black;
+}
+
+.notification-image{
+    background-color: #3b98d1;
+}

@@ -1,0 +1,12 @@
+.react-tel-input .form-control,
+.react-tel-input .flag-dropdown {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.phoneContainer {
+  width: 100% !important;
+  border: 0.0625rem solid #d2d6da;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}

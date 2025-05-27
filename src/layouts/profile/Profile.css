@@ -1,0 +1,94 @@
+.profile-image {
+  width: 74px;
+  height: 74px;
+}
+
+.profile-name {
+  color: #373d3f;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile-email {
+  color: #555f61;
+  font-size: 14px;
+}
+
+.main-card {
+  width: 650px;
+}
+
+.password-card {
+  padding: 2% 2%;
+}
+
+.profile-edit {
+  color: #3b98d1;
+  font-size: 14px;
+}
+
+.profile-edit-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.profile-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #373d3f;
+  padding: 1% 1%;
+}
+
+.edit-detail {
+  padding: 1% 1% 5% 1%;
+  margin: 0% 1% 5% 1%;
+  border-radius: 4px;
+}
+
+.top-section-c {
+  display: flex !important;
+  justify-content: start !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 20px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.btn-change {
+  background-color: #3b98d1 !important;
+  border: none;
+}
+
+.btn-remove,
+.btn-remove:hover,
+.btn-remove:active {
+  background-color: white !important;
+  color: red !important;
+}
+
+.png-size {
+  color: #555f61;
+  font-size: 12px !important;
+  margin-top: 2%;
+}
+.actions-bottom {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.btn-cancel,
+.btn-cancel:hover,
+.btn-cancel:active {
+  border: 1px solid black;
+}
+
+.profile-text {
+  color: #373d3f;
+  font-size: 14px;
+}

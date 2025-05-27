@@ -1,0 +1,12 @@
+.total_payout {
+    position: absolute;
+    right: 30px;
+    bottom: 90px;
+}
+
+.total_payout_amount {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: rgba(55, 61, 63, 1) !important;
+    line-height: 24px !important;
+}
