@@ -5,6 +5,7 @@ import ResetPassword from "layouts/authentication/reset-password/cover";
 import ChangePassword from "layouts/authentication/change-password/cover";
 import ProtectedRoute from "components/ProtectedRoute";
 import NewUser from "layouts/users/new-user/NewUser";
+import PatientForm from "layouts/users/create-patient/PatientForm";
 import userIcon from "./assets/icons/user.svg";
 import userIconActive from "./assets/icons/user-white.svg";
 // import homeIcon from "./assets/icons/home.svg";
@@ -80,11 +81,11 @@ export const sidebarRoutes = [
     route: "/admin/user-management",
     component: <ProtectedRoute><Users /></ProtectedRoute>,
   },
-  // {
-  //   layout: "dashboard",
-  //   route: "/admin/user-management/new-user",
-  //   component: <NewUser />,
-  // },
+  {
+    layout: "user",
+    route: "/admin/user-management/create-patient",
+    component: <ProtectedRoute><PatientForm /></ProtectedRoute>,
+  },
   // {
   //   layout: "dashboard",
   //   route: "/admin/user-management/edit-user/:id",

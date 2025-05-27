@@ -107,88 +107,90 @@ function Cover() {
 
   return (
     <>
-    <CoverLayout
-      // title="Welcome!"
-      // description="Use these awesome forms to login or create new account in your project for free."
-      image={bgColor}
-    >
-      <Card>
-        <ArgonBox pt={3} px={3}>
-          <ArgonTypography variant="h3" color="dark" fontWeight="bold" mb={1}>
-            Welcome back
-          </ArgonTypography>
-          <ArgonTypography variant="body2" color="text">
-            Enter your email and password to sign in
-          </ArgonTypography>
-        </ArgonBox>
-        <ArgonBox p={3}>
-          <ArgonBox component="form" role="form">
-            <ArgonBox mb={3}>
-              <ArgonTypography
-                display="block"
-                variant="caption"
-                fontWeight="bold"
-                color="dark"
-                sx={{ ml: 0.5, mb: 1 }}
-              >
-                Email
-              </ArgonTypography>
-              <ArgonInput
-                type="email"
-                placeholder="Email"
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </ArgonBox>
-            <ArgonBox mb={3}>
-              <ArgonTypography
-                display="block"
-                variant="caption"
-                fontWeight="bold"
-                color="dark"
-                sx={{ ml: 0.5, mb: 1 }}
-              >
-                Password
-              </ArgonTypography>
-              <ArgonInput
-                type="password"
-                placeholder="Password"
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </ArgonBox>
-            <ArgonBox display="flex" alignItems="center">
-              <Switch checked={rememberMe} onChange={handleSetRememberMe} />
-              <ArgonTypography
-                variant="button"
-                fontWeight="regular"
-                onClick={handleSetRememberMe}
-                sx={{ cursor: "pointer", userSelect: "none" }}
-              >
-                &nbsp;&nbsp;Remember me
-              </ArgonTypography>
-            </ArgonBox>
-            <ArgonBox mt={4}>
-              <ArgonButton color="primary" fullWidth onClick={signIn}>
-                Sign In
-              </ArgonButton>
+      
+      <CoverLayout image={bgColor}>
+        <Card mt={-4} style={{ maxWidth:600, width: "100%", margin: "0 auto" }} >
+          <ArgonBox display="flex" flexDirection="column" alignItems="center" mt={2} mb={1}>
+            <ArgonTypography variant="h3" fontWeight="bold" color="primary">
+              Mediverse
+            </ArgonTypography>
+          </ArgonBox>
+          <ArgonBox pt={3} px={3}>
+            <ArgonTypography variant="h3" color="dark" fontWeight="bold" mb={1}>
+              Welcome back
+            </ArgonTypography>
+            <ArgonTypography variant="body2" color="text">
+              Enter your email and password to sign in
+            </ArgonTypography>
+          </ArgonBox>
+          <ArgonBox p={3}>
+            <ArgonBox component="form" role="form">
+              <ArgonBox mb={3}>
+                <ArgonTypography
+                  display="block"
+                  variant="caption"
+                  fontWeight="bold"
+                  color="dark"
+                  sx={{ ml: 0.5, mb: 1 }}
+                >
+                  Email
+                </ArgonTypography>
+                <ArgonInput
+                  type="email"
+                  placeholder="Email"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </ArgonBox>
+              <ArgonBox mb={3}>
+                <ArgonTypography
+                  display="block"
+                  variant="caption"
+                  fontWeight="bold"
+                  color="dark"
+                  sx={{ ml: 0.5, mb: 1 }}
+                >
+                  Password
+                </ArgonTypography>
+                <ArgonInput
+                  type="password"
+                  placeholder="Password"
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </ArgonBox>
+              <ArgonBox display="flex" alignItems="center">
+                <Switch checked={rememberMe} onChange={handleSetRememberMe} />
+                <ArgonTypography
+                  variant="button"
+                  fontWeight="regular"
+                  onClick={handleSetRememberMe}
+                  sx={{ cursor: "pointer", userSelect: "none" }}
+                >
+                  &nbsp;&nbsp;Remember me
+                </ArgonTypography>
+              </ArgonBox>
+              <ArgonBox mt={4}>
+                <ArgonButton color="primary" fullWidth onClick={signIn}>
+                  Sign In
+                </ArgonButton>
+              </ArgonBox>
             </ArgonBox>
           </ArgonBox>
-        </ArgonBox>
-        <ArgonBox pb={4} px={1} textAlign="center">
-          <ArgonTypography variant="button" fontWeight="regular" color="text">
-            Can&apos;t remember the password?{" "}
-            <ArgonTypography
-              component={Link}
-              to="/user/reset-password"
-              variant="button"
-              fontWeight="regular"
-              color="primary"
-            >
-              Reset Here
+          <ArgonBox pb={4} px={1} textAlign="center">
+            <ArgonTypography variant="button" fontWeight="regular" color="text">
+              Can&apos;t remember the password?{" "}
+              <ArgonTypography
+                component={Link}
+                to="/user/reset-password"
+                variant="button"
+                fontWeight="regular"
+                color="primary"
+              >
+                Reset Here
+              </ArgonTypography>
             </ArgonTypography>
-          </ArgonTypography>
-        </ArgonBox>
-      </Card>
-    </CoverLayout>
+          </ArgonBox>
+        </Card>
+      </CoverLayout>
     </>
   );
 }

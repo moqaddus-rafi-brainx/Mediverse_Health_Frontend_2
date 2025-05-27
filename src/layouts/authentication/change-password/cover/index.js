@@ -50,82 +50,89 @@ function Cover() {
       });
   };
   return (
-    <CoverLayout image={bgColor} imgPosition="top" button={{ color: "info" }}>
-      <Card>
-       
-        <ArgonBox p={3}>
-          <ArgonBox display="flex" alignItems="center">
-            <ArgonBox
-              width="3rem"
-              height="3rem"
-              bgColor="primary"
-              shadow="md"
-              display="grid"
-              alignItems="center"
-              justifyContent="center"
-              borderRadius="md"
-            >
+    <>
+      
+      <CoverLayout image={bgColor} imgPosition="top" button={{ color: "info" }}>
+        <Card mt={-4}>
+          <ArgonBox display="flex" flexDirection="column" alignItems="center" mt={2} mb={1}>
+            <ArgonTypography variant="h3" fontWeight="bold" color="primary">
+              Mediverse
+            </ArgonTypography>
+          </ArgonBox>
+          <ArgonBox p={3}>
+            <ArgonBox display="flex" alignItems="center">
               <ArgonBox
-                component="i"
-                color="white"
-                fontSize="1.25rem"
-                className="ni ni-circle-08"
-              />
-            </ArgonBox>
-            <ArgonBox ml={2} lineHeight={1}>
-              <ArgonTypography variant="h5" color="dark">
-                Create new Password
-              </ArgonTypography>
-              <ArgonTypography variant="button" fontWeight="regular">
-                Restore access to your account
-              </ArgonTypography>
+                width="3rem"
+                height="3rem"
+                bgColor="primary"
+                shadow="md"
+                display="grid"
+                alignItems="center"
+                justifyContent="center"
+                borderRadius="md"
+              >
+                <ArgonBox
+                  component="i"
+                  color="white"
+                  fontSize="1.25rem"
+                  className="ni ni-circle-08"
+                />
+              </ArgonBox>
+              <ArgonBox ml={2} lineHeight={1}>
+                <ArgonTypography variant="h5" color="dark">
+                  Create new Password
+                </ArgonTypography>
+                <ArgonTypography variant="button" fontWeight="regular">
+                  Restore access to your account
+                </ArgonTypography>
+              </ArgonBox>
             </ArgonBox>
           </ArgonBox>
-        </ArgonBox>
-        <ArgonBox p={3}>
-          <ArgonBox component="form" role="form">
-            <ArgonBox mb={2}>
-              <ArgonTypography
-                display="block"
-                variant="caption"
-                fontWeight="bold"
-                color="dark"
-                sx={{ ml: 0.5, mb: 1 }}
-              >
-                Password
-              </ArgonTypography>
-              <ArgonInput
-                type="password"
-                placeholder="password"
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </ArgonBox>
-            <ArgonBox mb={2}>
-              <ArgonTypography
-                display="block"
-                variant="caption"
-                fontWeight="bold"
-                color="dark"
-                sx={{ ml: 0.5, mb: 1 }}
-              >
-                Confirm Password
-              </ArgonTypography>
-              <ArgonInput
-                type="password"
-                placeholder="confirm password"
-                onChange={(e) => setConfirmPassword(e.target.value)}
-              />
-            </ArgonBox>
+          <ArgonBox p={3}>
+            <ArgonBox component="form" role="form">
+              <ArgonBox mb={2}>
+                <ArgonTypography
+                  display="block"
+                  variant="caption"
+                  fontWeight="bold"
+                  color="dark"
+                  sx={{ ml: 0.5, mb: 1 }}
+                >
+                  Password
+                </ArgonTypography>
+                <ArgonInput
+                  type="password"
+                  placeholder="password"
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </ArgonBox>
+              <ArgonBox mb={2}>
+                <ArgonTypography
+                  display="block"
+                  variant="caption"
+                  fontWeight="bold"
+                  color="dark"
+                  sx={{ ml: 0.5, mb: 1 }}
+                >
+                  Confirm Password
+                </ArgonTypography>
+                <ArgonInput
+                  type="password"
+                  placeholder="confirm password"
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                />
+              </ArgonBox>
 
-            <ArgonBox mt={3} mb={1} textAlign="center">
-              <ArgonButton color="primary" fullWidth onClick={handleChangePassword}>
-                Set New Password
-              </ArgonButton>
+              <ArgonBox mt={3} mb={1} textAlign="center">
+                <ArgonButton color="primary" fullWidth onClick={handleChangePassword}>
+                  Set New Password
+                </ArgonButton>
+              </ArgonBox>
             </ArgonBox>
           </ArgonBox>
-        </ArgonBox>
-      </Card>
-    </CoverLayout>
+        </Card>
+      </CoverLayout>
+    </>
   );
 }
 

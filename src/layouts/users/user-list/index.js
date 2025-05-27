@@ -71,6 +71,7 @@ function UsersList() {
   // Update search value and trigger debounced search
   const handleSearchChange = (value) => {
     setSearch(value);
+    setPageNo(1); // Reset to first page immediately when search changes
     debouncedSearchHandler(value);
   };
 
@@ -173,10 +174,10 @@ function UsersList() {
               </ArgonTypography>
             </ArgonBox>
             <Stack spacing={1} direction="row">
-              <Link to="/patients/new">
+              <Link to="/admin/user-management/create-patient">
                 <ArgonButton
-                  variant="contained"
                   color="primary"
+                  variant="contained"
                   size="medium"
                   style={{ fontWeight: "600" }}
                 >
